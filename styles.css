@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container{
+    margin: auto;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 28px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+.tec{
+    font-weight: bold;
+}
+
+.subtitles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: 250;
+    margin-top: 10px;
+}
+
+.contenedores{
+    display: flex;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.tec-two{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 35PX;
+}
+
+.content{
+    color: hsl(234, 12%, 34%);
+    font-weight: 250;
+    margin-top: 10px;
+    width: 350px;
+    margin-left: 35px;
+}
+ 
+.cinta-conatainer{
+    width: auto;
+}
+
+
+
+.super-conta{
+    border: 1px solid black;
+    width: 390px;
+    height: 250px;
+    margin-right: 40px;
+    margin-top: 200px;
+    background: url('images/icon-supervisor.svg') no-repeat 280px 160px ;
+    border: 1px solid hsl(229, 6%, 66%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px -8px 8px hsl(212, 86%, 64%) /* Sombras en la parte superior */
+}
+
+.super-conta::before {
+    content: '';
+    position: absolute;
+    top: -30px; /* Ajusta la posición vertical de la sombra según sea necesario */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Ajusta el grosor de la sombra */
+    background-color: rgba(0, 0, 0, 0.5); /* Color y transparencia de la sombra */
+    border-radius: 5px 5px 0 0; /* Ajusta el radio para que la sombra superior tenga bordes redondeados */
+    z-index: -1; /* Asegura que esté detrás del contenido principal */
+}
+
+.container-two{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+.team-conta{
+    border: 1px solid black;
+    width: 390px;
+    height: 250px;
+    background: url('images/icon-team-builder.svg') no-repeat 280px 160px ;
+    border: 1px solid hsl(229, 6%, 66%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px -8px 8px hsl(0, 78%, 62%) /* Sombras en la parte superior */
+}
+
+.karma-conta{
+    border: 1px solid black;
+    width: 390px;
+    height: 250px;
+    margin-top: 50px;
+    background: url('images/icon-karma.svg') no-repeat 280px 160px ;
+    border: 1px solid hsl(229, 6%, 66%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px -8px 8px hsl(34, 97%, 64%) /* Sombras en la parte superior */
+}
+
+
+.calcu-container{
+    width: auto;
+}
+
+.calcu-conta{
+    border: 1px solid black;
+    width: 390px;
+    height: 250px;
+    margin-left: 40px;
+    margin-top: 200px;
+    background: url('images/icon-calculator.svg') no-repeat 280px 160px ;
+    border: 1px solid hsl(229, 6%, 66%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px -8px 8px hsl(180, 62%, 55%)/* Sombras en la parte superior */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .contenedores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tec-two, .content {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .titles {
+        font-size: 24px;
+    }
+
+    .tec-two {
+        font-size: 16px;
+    }
+}
